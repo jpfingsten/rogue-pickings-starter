@@ -161,3 +161,46 @@ footer span {
 	color: #77a466;
 	font-size: 1em;
 }
+
+@media all and (min-width:768px) {
+	.bottom-section {
+		border-top: 1px solid #eee;
+		justify-content: space-between;
+		align-items: flex-start;
+	}
+
+	.section-one,
+	.section-two,
+	.section-three {
+		flex-basis: 30%;
+		border-top: none;
+	}
+
+	.section-two {
+		border-right: 1px solid #eee;
+		border-left: 1px solid #eee;
+		padding: 0 20px;
+	}
+}
+
+@media all and (min-width:1200px) {
+	header {
+		justify-content: space-between;
+	}
+
+	header h1 {
+		flex-basis: 30%;
+		border: none;
+		padding: 0;
+		text-align: left;
+	}
+
+	header nav {
+		flex-basis: 40%;
+	}
+
+	header nav ul {
+		display: flex;
+		justify-content: space-between;
+	}
+}
